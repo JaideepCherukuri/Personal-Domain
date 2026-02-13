@@ -1,0 +1,10 @@
+# robots.txt for emileedurrett.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://emileedurrett.com/sitemap.xml
+
+# Disallow admin or private paths (none currently)
+# Disallow: /admin/
