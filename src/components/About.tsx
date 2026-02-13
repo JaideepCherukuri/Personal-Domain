@@ -1,73 +1,13 @@
-import { useEffect, useRef } from "react";
-import { useInitialLoader } from "./InitialLoader";
-import gsap from "gsap";
-
 const aboutImage = "/assets/jaideep-portrait.png";
 const iconX = "/assets/icon-x.svg";
 const iconLinkedIn = "/assets/icon-linkedin.svg";
 
 export default function About() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const imageRef = useRef<HTMLDivElement>(null);
-  const contentRef = useRef<HTMLDivElement>(null);
-  const { shouldAnimate, isFirstVisit } = useInitialLoader();
-  const hasAnimated = useRef(false);
-
-  useEffect(() => {
-    const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
-
-    if (prefersReducedMotion || !isFirstVisit) {
-      if (imageRef.current) gsap.set(imageRef.current, { opacity: 1, x: 0 });
-      if (contentRef.current) gsap.set(contentRef.current, { opacity: 1, x: 0 });
-      return;
-    }
-
-    if (imageRef.current) gsap.set(imageRef.current, { opacity: 0, x: -50 });
-    if (contentRef.current) gsap.set(contentRef.current, { opacity: 0, x: 50 });
-  }, [isFirstVisit]);
-
-  useEffect(() => {
-    if (!shouldAnimate || hasAnimated.current) return;
-    if (!isFirstVisit) return;
-
-    hasAnimated.current = true;
-
-    const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
-
-    if (prefersReducedMotion) return;
-
-    const baseDelay = 0.2;
-
-    if (imageRef.current) {
-      gsap.to(imageRef.current, {
-        opacity: 1,
-        x: 0,
-        duration: 0.6,
-        ease: "power2.out",
-        delay: baseDelay,
-      });
-    }
-
-    if (contentRef.current) {
-      gsap.to(contentRef.current, {
-        opacity: 1,
-        x: 0,
-        duration: 0.6,
-        ease: "power2.out",
-        delay: baseDelay + 0.15,
-      });
-    }
-  }, [shouldAnimate, isFirstVisit]);
-
   return (
-    <section ref={sectionRef} className="w-full bg-black font-[Helvetica_Neue,Helvetica,Arial,sans-serif]">
+    <section className="w-full bg-black font-[Geist_Sans,sans-serif]">
       <div className="flex flex-col lg:flex-row">
         {/* Left: Portrait image */}
-        <div ref={imageRef} className="w-full lg:w-[43%] lg:shrink-0 bg-black">
+        <div className="w-full lg:w-[43%] lg:shrink-0 bg-black">
           <img
             src={aboutImage}
             alt="Jaideep Cherukuri"
@@ -76,7 +16,7 @@ export default function About() {
         </div>
 
         {/* Right: Content */}
-        <div ref={contentRef} className="flex-1 px-6 py-10 lg:px-12 lg:py-16 lg:pl-16">
+        <div className="flex-1 px-6 py-10 lg:px-12 lg:py-16 lg:pl-16">
           {/* Header */}
           <p className="text-[11px] tracking-[0.88px] mb-2 text-[#FBFDE2]">A BIT ABOUT ME</p>
           <h2 className="font-light text-[48px] sm:text-[64px] lg:text-[82px] tracking-[-4px] lg:tracking-[-6.56px] leading-[1] mb-8 lg:mb-12 text-[#FBFDE2]">
