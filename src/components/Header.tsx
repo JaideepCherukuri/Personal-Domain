@@ -58,12 +58,12 @@ export default function Header() {
       {/* Logo / Name */}
       <div className="flex flex-col">
         {/* Mobile: Stacked name */}
-        <h1 className="md:hidden font-light text-[92px] text-black tracking-[-7.36px] leading-[75px]">
+        <h1 className="md:hidden font-light text-[64px] text-black tracking-[-5px] leading-[55px]">
           <span className="block">JAIDEEP</span>
           <span className="block">CHERUKURI</span>
         </h1>
         {/* Desktop: Single line */}
-        <h1 className="hidden md:block font-light text-[92px] text-black tracking-[-7.36px] leading-normal">
+        <h1 className="hidden md:block font-light text-[72px] text-black tracking-[-5.76px] leading-normal">
           JAIDEEP CHERUKURI
         </h1>
         <p className="font-normal text-[9px] md:text-xs text-black tracking-[0.72px] md:tracking-[0.96px] leading-normal mt-4 md:mt-2">

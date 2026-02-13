@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { useInitialLoader } from "./InitialLoader";
 import gsap from "gsap";
 
-const aboutImage = "/assets/a203f120478de659acc222ee3c87986195b51d97.webp";
+const aboutImage = "/assets/jaideep-portrait.png";
 
 export default function About() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -68,7 +68,7 @@ export default function About() {
     <section ref={sectionRef} className="w-full bg-white font-[Helvetica_Neue,Helvetica,Arial,sans-serif]">
       <div className="flex flex-col lg:flex-row">
         {/* Left: Portrait image */}
-        <div ref={imageRef} className="w-full lg:w-[43%] lg:shrink-0">
+        <div ref={imageRef} className="w-full lg:w-[43%] lg:shrink-0 bg-black">
           <img
             src={aboutImage}
             alt="Portrait of Jaideep Cherukuri"
