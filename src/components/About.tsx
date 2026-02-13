@@ -3,6 +3,8 @@ import { useInitialLoader } from "./InitialLoader";
 import gsap from "gsap";
 
 const aboutImage = "/assets/jaideep-portrait.png";
+const iconX = "/assets/icon-x.svg";
+const iconLinkedIn = "/assets/icon-linkedin.svg";
 
 export default function About() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -87,77 +89,93 @@ export default function About() {
           {/* Bio paragraphs */}
           <div className="text-[11px] tracking-[0.88px] leading-[1.6] max-w-[562px] space-y-4 mb-10 lg:mb-12">
             <p>
-              I like to think my career as a creative director actually started
-              when I was about nine years old—when my sister and I launched a
-              full-scale (very fake) magazine brand out of the back bedroom at my
-              grandparents' house. We sent emails (to each other), managed
-              overworked assistants (named Susan, entirely imaginary), and
-              produced full photoshoots complete with mood boards, visual
-              direction, and magazine articles. Obviously.
+              I'm Jaideep — a product builder, entrepreneur, and UC Berkeley alum
+              working at the intersection of AI agents, stablecoins, and
+              borderless money. I believe the next era of the internet will be
+              defined by autonomous commerce — where agents negotiate, transact,
+              and settle on behalf of people and businesses.
             </p>
             <p>
-              Fast forward twenty years. Add a degree in Visual Communication,
-              some truly wild agency experience on both coasts, and a mix of
-              incredible (and some not-so-incredible) brands and clients. What
-              you get is a freelance creative who thinks big—strategy,
-              storytelling, the full picture—but is also more than happy to open
-              up her sketchbook, jump into Adobe Illustrator, and get her hands
-              dirty in the details.
+              I'm currently building Halofy (HALO) — an Agentic Banking OS that
+              provides the missing financial infrastructure layer between AI
+              agents and money. Think of it as the universal plumbing that lets
+              agents become economic actors — with delegated authentication,
+              scoped payment sessions, and an immutable audit trail, all
+              protocol-agnostic.
             </p>
             <p>
-              I've had the very real privilege of working with some of the
-              biggest brands in the country across a wide range of industries, as
-              well as jumping in on the ground floor to help build brands—small
-              and large—with vision, intention, and strategy. The best part of my
-              job is finding those ah-ha moments when the whole room
-              clicks—whether that room is filled with 20+ marketers, designers,
-              and execs, or it's a Zoom call with a founder and a big dream.
+              Before this, I built and exited stablecoin payment rails for
+              merchants — turning the complexities of digital asset settlement
+              into something simple enough for any business to use. That
+              experience taught me that the real unlock isn't the technology
+              itself, but making it invisible to the end user.
             </p>
             <p>
-              I've been chasing the next big idea since I was nine—yelling at my
-              fake assistant, channeling my inner Miranda Priestly, and refusing
-              to slow down. If you're after your next big idea, give me a shout.
-              I'd love to be in the room.
+              My journey started at SRM University studying Computer Science,
+              then a transformative semester at UC Berkeley's Sutardja Center for
+              Entrepreneurship &amp; Technology, where I was part of the Startup
+              Semester program. That experience — hackathon wins, VC pitches,
+              late-night building — shaped how I think about products today:
+              start with a real problem, move fast, and never stop iterating.
+            </p>
+            <p>
+              I'm an Entrepreneur First alum, a product enthusiast at heart, and
+              someone who's been obsessed with the future of money since before
+              it was cool. If you're building in agentic commerce, digital
+              assets, or fintech infrastructure — I'd love to connect.
             </p>
           </div>
 
-          {/* Two columns: Skills and Clients */}
+          {/* Two columns: What I Do and Technologies */}
           <div className="flex flex-col sm:flex-row gap-10 sm:gap-16 lg:gap-24 mb-10 lg:mb-12">
-            {/* Skills */}
+            {/* What I Do */}
             <div className="text-[11px] tracking-[0.88px] leading-[1.6]">
-              <p className="mb-4">SOME THINGS I AM GOOD AT:</p>
+              <p className="mb-4">WHAT I BUILD &amp; THINK ABOUT:</p>
               <ul className="lowercase space-y-1">
-                <li>conceptual thinking &amp; platform exploration</li>
-                <li>untangling knots (literally &amp; figuratively)</li>
-                <li>branding &amp; packaging design</li>
-                <li>photo/video shoot direction</li>
-                <li>strange doodles that sometimes end up in logos</li>
-                <li>photography</li>
-                <li>videography</li>
-                <li>content creation &amp; ugc</li>
-                <li>making myself laugh</li>
-                <li>video editing</li>
-                <li>finding small, lost items on the ground</li>
+                <li>agentic banking &amp; autonomous commerce</li>
+                <li>stablecoin infrastructure &amp; payment rails</li>
+                <li>digital asset settlement systems</li>
+                <li>protocol-agnostic middleware</li>
+                <li>ai agent financial tooling</li>
+                <li>product strategy &amp; 0-to-1 building</li>
+                <li>fintech ux that feels invisible</li>
+                <li>borderless money &amp; intent-based transactions</li>
               </ul>
             </div>
 
-            {/* Clients */}
+            {/* Background */}
             <div className="text-[11px] tracking-[0.88px] leading-[1.6]">
-              <p className="mb-4">SOME FOLKS I HAVE WORKED WITH:</p>
+              <p className="mb-4">WHERE I'VE BEEN:</p>
               <ul className="lowercase space-y-1">
-                <li>traditional medicinals</li>
-                <li>crocs</li>
-                <li>justin bieber</li>
-                <li>universal music group</li>
-                <li>the grammys</li>
-                <li>fifa</li>
-                <li>puma</li>
-                <li>togethxr</li>
-                <li>deborah pagani</li>
-                <li>sciton</li>
-                <li>conscious alliance</li>
+                <li>halofy (halo) — founder</li>
+                <li>stablecoin merchant rails — exited</li>
+                <li>entrepreneur first — alum</li>
+                <li>uc berkeley — scet startup semester</li>
+                <li>srm university — computer science</li>
               </ul>
             </div>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex items-center gap-5">
+            <a
+              href="https://x.com/0xjaideep"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-70 transition-opacity"
+              aria-label="X (Twitter)"
+            >
+              <img src={iconX} alt="X" className="w-5 h-5" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jaideep-cherukuri"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-70 transition-opacity"
+              aria-label="LinkedIn"
+            >
+              <img src={iconLinkedIn} alt="LinkedIn" className="w-5 h-5" />
+            </a>
           </div>
         </div>
       </div>
