@@ -25,12 +25,10 @@ export default function About() {
       return;
     }
 
-    // Hidden state for first visit
     if (imageRef.current) gsap.set(imageRef.current, { opacity: 0, x: -50 });
     if (contentRef.current) gsap.set(contentRef.current, { opacity: 0, x: 50 });
   }, [isFirstVisit]);
 
-  // Run entrance animation when shouldAnimate becomes true
   useEffect(() => {
     if (!shouldAnimate || hasAnimated.current) return;
     if (!isFirstVisit) return;
@@ -73,87 +71,57 @@ export default function About() {
         <div ref={imageRef} className="w-full lg:w-[43%] lg:shrink-0 bg-black">
           <img
             src={aboutImage}
-            alt="Portrait of Jaideep Cherukuri"
+            alt="Jaideep Cherukuri"
             className="w-full h-auto lg:h-full object-cover"
           />
         </div>
 
         {/* Right: Content */}
         <div ref={contentRef} className="flex-1 px-6 py-10 lg:px-12 lg:py-16 lg:pl-16">
-          {/* Header */}
           <p className="text-[11px] tracking-[0.88px] mb-2">A BIT ABOUT ME</p>
           <h2 className="font-light text-[48px] sm:text-[64px] lg:text-[82px] tracking-[-4px] lg:tracking-[-6.56px] leading-[1] mb-8 lg:mb-12">
             HELLO THERE
           </h2>
 
-          {/* Bio paragraphs */}
           <div className="text-[11px] tracking-[0.88px] leading-[1.6] max-w-[562px] space-y-4 mb-10 lg:mb-12">
             <p>
-              I'm Jaideep — a product builder, entrepreneur, and UC Berkeley alum
-              working at the intersection of AI agents, stablecoins, and
-              borderless money. I believe the next era of the internet will be
-              defined by autonomous commerce — where agents negotiate, transact,
-              and settle on behalf of people and businesses.
+              Money is the oldest protocol. Before HTTP, before TCP/IP, before
+              language even had grammar, humans were inventing ways to make trust
+              portable. Shells, ledgers, gold, paper, digits on a screen. Every
+              generation rewrites the rules. I think we're in the middle of the
+              next rewrite.
             </p>
             <p>
-              I'm currently building Halofy (HALO) — an Agentic Banking OS that
-              provides the missing financial infrastructure layer between AI
-              agents and money. Think of it as the universal plumbing that lets
-              agents become economic actors — with delegated authentication,
-              scoped payment sessions, and an immutable audit trail, all
-              protocol-agnostic.
+              I'm building Halofy. The short version: an operating system that
+              lets AI agents actually move money. Right now, the smartest agent
+              on earth still can't pay for a cup of coffee without asking you for
+              a password. That bothers me more than it probably should.
             </p>
             <p>
-              Before this, I built and exited stablecoin payment rails for
-              merchants — turning the complexities of digital asset settlement
-              into something simple enough for any business to use. That
-              experience taught me that the real unlock isn't the technology
-              itself, but making it invisible to the end user.
+              The thing I keep coming back to is that infrastructure only works
+              when it disappears. I built stablecoin payment rails before this,
+              found an exit, and the biggest lesson wasn't about crypto or
+              scale. It was that the moment someone has to think about the
+              plumbing, you've already failed. Good pipes are invisible pipes.
             </p>
             <p>
-              My journey started at SRM University studying Computer Science,
-              then a transformative semester at UC Berkeley's Sutardja Center for
-              Entrepreneurship &amp; Technology, where I was part of the Startup
-              Semester program. That experience — hackathon wins, VC pitches,
-              late-night building — shaped how I think about products today:
-              start with a real problem, move fast, and never stop iterating.
+              My path to here: CS in Chennai, a semester at Berkeley that
+              rewired how I think about building things, hackathons where the
+              best ideas showed up around 3am, and Entrepreneur First, where
+              they ask you the uncomfortable question: what would you build if
+              nobody was watching? The answer kept pointing the same direction.
+              Money. Agents. The strange future where those two things collide.
             </p>
             <p>
-              I'm an Entrepreneur First alum, a product enthusiast at heart, and
-              someone who's been obsessed with the future of money since before
-              it was cool. If you're building in agentic commerce, digital
-              assets, or fintech infrastructure — I'd love to connect.
+              I believe the next decade belongs to intent. Not clicks, not
+              commands. You express what you want and an economy of autonomous
+              agents figures out the rest. But that world needs rails that don't
+              exist yet. Trust frameworks nobody has written. Someone has to
+              build the invisible layer underneath all of it.
             </p>
-          </div>
-
-          {/* Two columns: What I Do and Technologies */}
-          <div className="flex flex-col sm:flex-row gap-10 sm:gap-16 lg:gap-24 mb-10 lg:mb-12">
-            {/* What I Do */}
-            <div className="text-[11px] tracking-[0.88px] leading-[1.6]">
-              <p className="mb-4">WHAT I BUILD &amp; THINK ABOUT:</p>
-              <ul className="lowercase space-y-1">
-                <li>agentic banking &amp; autonomous commerce</li>
-                <li>stablecoin infrastructure &amp; payment rails</li>
-                <li>digital asset settlement systems</li>
-                <li>protocol-agnostic middleware</li>
-                <li>ai agent financial tooling</li>
-                <li>product strategy &amp; 0-to-1 building</li>
-                <li>fintech ux that feels invisible</li>
-                <li>borderless money &amp; intent-based transactions</li>
-              </ul>
-            </div>
-
-            {/* Background */}
-            <div className="text-[11px] tracking-[0.88px] leading-[1.6]">
-              <p className="mb-4">WHERE I'VE BEEN:</p>
-              <ul className="lowercase space-y-1">
-                <li>halofy (halo) — founder</li>
-                <li>stablecoin merchant rails — exited</li>
-                <li>entrepreneur first — alum</li>
-                <li>uc berkeley — scet startup semester</li>
-                <li>srm university — computer science</li>
-              </ul>
-            </div>
+            <p>
+              That's what I'm doing.
+            </p>
           </div>
 
           {/* Social Links */}
