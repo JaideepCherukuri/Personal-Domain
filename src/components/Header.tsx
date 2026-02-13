@@ -17,9 +17,9 @@ export default function Header() {
   const headerRef = useRef<HTMLElement>(null);
   const shimmerStarted = useRef(false);
 
-  const desktopChars = useMemo(() => splitToSpans("JAIDEEP CHERUKURI"), []);
-  const mobileFirstLine = useMemo(() => splitToSpans("JAIDEEP"), []);
-  const mobileSecondLine = useMemo(() => splitToSpans("CHERUKURI"), []);
+  const desktopChars = useMemo(() => splitToSpans("Jaideep Cherukuri"), []);
+  const mobileFirstLine = useMemo(() => splitToSpans("Jaideep"), []);
+  const mobileSecondLine = useMemo(() => splitToSpans("Cherukuri"), []);
 
   // Start the shimmer loop on mount
   useEffect(() => {
@@ -70,7 +70,7 @@ export default function Header() {
           {desktopChars}
         </h1>
         <p className="font-normal text-[9px] md:text-xs text-[#FBFDE2] tracking-[0.72px] md:tracking-[0.96px] leading-normal mt-4 md:mt-2 font-[Geist_Sans,sans-serif]">
-          PERSONAL PORTFOLIO
+          Personal Portfolio
         </p>
       </div>
     </header>

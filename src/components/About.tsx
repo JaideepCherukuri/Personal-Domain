@@ -18,9 +18,9 @@ export default function About() {
         {/* Right: Content */}
         <div className="flex-1 px-6 py-10 lg:px-12 lg:py-16 lg:pl-16">
           {/* Header */}
-          <p className="text-[11px] tracking-[0.88px] mb-2 text-[#FBFDE2]">A BIT ABOUT ME</p>
+          <p className="text-[11px] tracking-[0.88px] mb-2 text-[#FBFDE2]">A bit about me</p>
           <h2 className="font-light text-[48px] sm:text-[64px] lg:text-[82px] tracking-[-4px] lg:tracking-[-6.56px] leading-[1] mb-8 lg:mb-12 text-[#FBFDE2]">
-            HELLO THERE
+            Hello there
           </h2>
 
           {/* Bio paragraphs */}
@@ -62,27 +62,27 @@ export default function About() {
           <div className="flex flex-col sm:flex-row gap-10 sm:gap-16 lg:gap-24 mb-10 lg:mb-12 text-[#FBFDE2]">
             {/* What I think about */}
             <div className="text-[11px] tracking-[0.88px] leading-[1.6]">
-              <p className="mb-4">WHAT I THINK ABOUT:</p>
-              <ul className="lowercase space-y-1">
-                <li>what happens when machines become economic actors</li>
-                <li>infrastructure that knows how to disappear</li>
-                <li>the gap between how money works and how it should</li>
-                <li>stablecoins &amp; autonomous settlement</li>
-                <li>zero-to-one product building</li>
-                <li>trust in systems without humans in the loop</li>
-                <li>why the best technology feels like it was always there</li>
+              <p className="mb-4">What I think about</p>
+              <ul className="space-y-1">
+                <li>What happens when machines become economic actors</li>
+                <li>Infrastructure that knows how to disappear</li>
+                <li>The gap between how money works and how it should</li>
+                <li>Stablecoins &amp; autonomous settlement</li>
+                <li>Zero-to-one product building</li>
+                <li>Trust in systems without humans in the loop</li>
+                <li>Why the best technology feels like it was always there</li>
               </ul>
             </div>
 
             {/* Where I've been */}
             <div className="text-[11px] tracking-[0.88px] leading-[1.6]">
-              <p className="mb-4">WHERE I'VE BEEN:</p>
-              <ul className="lowercase space-y-1">
-                <li>uc berkeley, sutardja center for entrepreneurship</li>
-                <li>entrepreneur first</li>
-                <li>stablecoin infrastructure (built it, exited)</li>
-                <li>srm university, computer science</li>
-                <li>enough hackathons to know the best ideas come at 3am</li>
+              <p className="mb-4">Where I've been</p>
+              <ul className="space-y-1">
+                <li>UC Berkeley, Sutardja Center for Entrepreneurship</li>
+                <li>Entrepreneur First</li>
+                <li>Stablecoin infrastructure (built it, exited)</li>
+                <li>SRM University, Computer Science</li>
+                <li>Enough hackathons to know the best ideas come at 3am</li>
               </ul>
             </div>
           </div>
