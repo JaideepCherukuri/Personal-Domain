@@ -46,7 +46,7 @@ export default function Footer() {
       y: 0,
       duration: 0.6,
       ease: "power2.out",
-      delay: 0.4, // Last element in sequence
+      delay: 0.4,
     });
   }, [shouldAnimate, isFirstVisit]);
 
@@ -55,20 +55,11 @@ export default function Footer() {
       ref={footerRef}
       className="flex w-full flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0 bg-white px-4 sm:px-6 py-4 text-[10px] sm:text-[12px] tracking-tight border-t border-black/5 font-[Helvetica_Neue,Helvetica,Arial,sans-serif]"
     >
-      <span className="font-normal">EMILEE DURRETT</span>
+      <span className="font-normal">JAIDEEP CHERUKURI</span>
       <div className="font-normal">
         <span className="text-gray-300 text-[10px]">
-          developed by {" "}
-          <a className="text-blue-300" href="https://chasedurrett.dev" target="_blank">
-            donutboyband
-          </a>
+          &copy; {new Date().getFullYear()}
         </span>
-        <a
-          href="mailto:em@emileecreative.com"
-          className="font-normal hover:opacity-70 transition-opacity pl-4"
-        >
-          em@emileecreative.com
-        </a>
       </div>
     </footer>
   );

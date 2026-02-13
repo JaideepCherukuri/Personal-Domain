@@ -8,7 +8,7 @@ interface InitialLoaderContextType {
 
 const InitialLoaderContext = createContext<InitialLoaderContextType | null>(null);
 
-const STORAGE_KEY = "emilee-portfolio-visited";
+const STORAGE_KEY = "jaideep-portfolio-visited";
 
 interface InitialLoaderProviderProps {
   children: ReactNode;

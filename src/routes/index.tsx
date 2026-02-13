@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import Hero from "../components/Hero";
+import About from "../components/About";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 export const Route = createFileRoute("/")({
@@ -7,19 +7,11 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  useDocumentTitle("Creative Director & Designer");
+  useDocumentTitle("Jaideep Cherukuri");
 
   return (
     <div className="w-full bg-white text-black">
-      <Hero />
-
-      {/* Anchor targets for nav links */}
-      <section id="featured" className="sr-only">
-        Featured work
-      </section>
-      <section id="about" className="sr-only">
-        About
-      </section>
+      <About />
     </div>
   );
 }

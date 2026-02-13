@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const BASE_TITLE = 'Emilee Durrett';
+const BASE_TITLE = 'Jaideep Cherukuri';
 
 /**
  * Hook to set the document title dynamically
