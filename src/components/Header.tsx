@@ -21,7 +21,6 @@ export default function Header() {
       return;
     }
 
-    // Hidden state for first visit
     gsap.set(header, { opacity: 0, yPercent: -100 });
   }, [isFirstVisit]);
 
@@ -40,7 +39,6 @@ export default function Header() {
 
     if (prefersReducedMotion) return;
 
-    // Header slides down from top
     gsap.to(header, {
       opacity: 1,
       yPercent: 0,
@@ -53,20 +51,31 @@ export default function Header() {
   return (
     <header
       ref={headerRef}
-      className="relative z-50 flex w-full items-start justify-between bg-black px-[7px] py-[13px] md:px-8 md:py-4 font-[Helvetica_Neue,Helvetica,Arial,sans-serif]"
+      className="relative z-50 flex w-full items-start justify-between bg-black px-[7px] py-[13px] md:px-8 md:py-4"
     >
-      {/* Logo / Name */}
       <div className="flex flex-col">
-        {/* Mobile: Stacked name */}
-        <h1 className="md:hidden font-light text-[64px] text-[#FBFDE2] tracking-[-5px] leading-[55px]">
+        {/* Mobile: Stacked name — Geist Pixel Circle */}
+        <h1
+          className="md:hidden text-[48px] text-[#FBFDE2] tracking-[-2px] leading-[44px]"
+          style={{
+            fontFamily: '"GeistPixelCircle", monospace',
+            textShadow: '3px 3px rgba(251, 253, 226, 0.15)',
+          }}
+        >
           <span className="block">JAIDEEP</span>
           <span className="block">CHERUKURI</span>
         </h1>
-        {/* Desktop: Single line */}
-        <h1 className="hidden md:block font-light text-[72px] text-[#FBFDE2] tracking-[-5.76px] leading-normal">
+        {/* Desktop: Single line — Geist Pixel Circle */}
+        <h1
+          className="hidden md:block text-[72px] text-[#FBFDE2] tracking-[-3px] leading-normal"
+          style={{
+            fontFamily: '"GeistPixelCircle", monospace',
+            textShadow: '4px 4px rgba(251, 253, 226, 0.15)',
+          }}
+        >
           JAIDEEP CHERUKURI
         </h1>
-        <p className="font-normal text-[9px] md:text-xs text-[#FBFDE2] tracking-[0.72px] md:tracking-[0.96px] leading-normal mt-4 md:mt-2">
+        <p className="font-normal text-[9px] md:text-xs text-[#FBFDE2] tracking-[0.72px] md:tracking-[0.96px] leading-normal mt-4 md:mt-2 font-[Helvetica_Neue,Helvetica,Arial,sans-serif]">
           PERSONAL PORTFOLIO
         </p>
       </div>
