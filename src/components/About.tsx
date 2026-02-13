@@ -13,7 +13,6 @@ export default function About() {
   const { shouldAnimate, isFirstVisit } = useInitialLoader();
   const hasAnimated = useRef(false);
 
-  // Set initial state
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
@@ -78,50 +77,74 @@ export default function About() {
 
         {/* Right: Content */}
         <div ref={contentRef} className="flex-1 px-6 py-10 lg:px-12 lg:py-16 lg:pl-16">
+          {/* Header */}
           <p className="text-[11px] tracking-[0.88px] mb-2">A BIT ABOUT ME</p>
           <h2 className="font-light text-[48px] sm:text-[64px] lg:text-[82px] tracking-[-4px] lg:tracking-[-6.56px] leading-[1] mb-8 lg:mb-12">
             HELLO THERE
           </h2>
 
+          {/* Bio paragraphs */}
           <div className="text-[11px] tracking-[0.88px] leading-[1.6] max-w-[562px] space-y-4 mb-10 lg:mb-12">
             <p>
-              Money is the oldest protocol. Before HTTP, before TCP/IP, before
-              language even had grammar, humans were inventing ways to make trust
-              portable. Shells, ledgers, gold, paper, digits on a screen. Every
-              generation rewrites the rules. I think we're in the middle of the
-              next rewrite.
+              I've been thinking about money longer than I've been writing code.
+              Not about making it. About how it works. What makes a number in a
+              database worth something. Why trust moves the way it does. That
+              kind of curiosity doesn't go away. It just finds different outlets.
             </p>
             <p>
-              I'm building Halofy. The short version: an operating system that
-              lets AI agents actually move money. Right now, the smartest agent
-              on earth still can't pay for a cup of coffee without asking you for
-              a password. That bothers me more than it probably should.
+              I studied CS in Chennai, spent a semester at Berkeley's Sutardja
+              Center, and somewhere between the hackathons and the 3am
+              conversations, the way I see building changed completely. I stopped
+              caring about what's technically impressive and started caring about
+              what's actually useful.
             </p>
             <p>
-              The thing I keep coming back to is that infrastructure only works
-              when it disappears. I built stablecoin payment rails before this,
-              found an exit, and the biggest lesson wasn't about crypto or
-              scale. It was that the moment someone has to think about the
-              plumbing, you've already failed. Good pipes are invisible pipes.
+              After Berkeley, I built stablecoin payment rails for merchants.
+              Infrastructure that lets businesses move digital money without
+              understanding any of the plumbing. We found an exit. The biggest
+              takeaway wasn't about crypto or growth. It was simpler than that:
+              if someone notices your infrastructure, you haven't finished
+              building it.
             </p>
             <p>
-              My path to here: CS in Chennai, a semester at Berkeley that
-              rewired how I think about building things, hackathons where the
-              best ideas showed up around 3am, and Entrepreneur First, where
-              they ask you the uncomfortable question: what would you build if
-              nobody was watching? The answer kept pointing the same direction.
-              Money. Agents. The strange future where those two things collide.
+              These days I'm deep in the space where AI and money intersect. The
+              financial system assumes a human is always in the loop. Someone
+              typing passwords, reading screens, clicking buttons. But agents
+              don't work that way. They need entirely new rails, new trust
+              models, a financial layer that was never built because nobody
+              needed it before. I think building that layer is one of the most
+              important problems in tech right now. And honestly, it's the most
+              fun I've had.
             </p>
-            <p>
-              I believe the next decade belongs to intent. Not clicks, not
-              commands. You express what you want and an economy of autonomous
-              agents figures out the rest. But that world needs rails that don't
-              exist yet. Trust frameworks nobody has written. Someone has to
-              build the invisible layer underneath all of it.
-            </p>
-            <p>
-              That's what I'm doing.
-            </p>
+          </div>
+
+          {/* Two columns */}
+          <div className="flex flex-col sm:flex-row gap-10 sm:gap-16 lg:gap-24 mb-10 lg:mb-12">
+            {/* What I think about */}
+            <div className="text-[11px] tracking-[0.88px] leading-[1.6]">
+              <p className="mb-4">WHAT I THINK ABOUT:</p>
+              <ul className="lowercase space-y-1">
+                <li>what happens when machines become economic actors</li>
+                <li>infrastructure that knows how to disappear</li>
+                <li>the gap between how money works and how it should</li>
+                <li>stablecoins &amp; autonomous settlement</li>
+                <li>zero-to-one product building</li>
+                <li>trust in systems without humans in the loop</li>
+                <li>why the best technology feels like it was always there</li>
+              </ul>
+            </div>
+
+            {/* Where I've been */}
+            <div className="text-[11px] tracking-[0.88px] leading-[1.6]">
+              <p className="mb-4">WHERE I'VE BEEN:</p>
+              <ul className="lowercase space-y-1">
+                <li>uc berkeley, sutardja center for entrepreneurship</li>
+                <li>entrepreneur first</li>
+                <li>stablecoin infrastructure (built it, exited)</li>
+                <li>srm university, computer science</li>
+                <li>enough hackathons to know the best ideas come at 3am</li>
+              </ul>
+            </div>
           </div>
 
           {/* Social Links */}
