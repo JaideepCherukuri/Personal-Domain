@@ -10,7 +10,7 @@ function Index() {
   useDocumentTitle("Jaideep Cherukuri");
 
   return (
-    <div className="w-full bg-white text-black">
+    <div className="w-full bg-black text-[#FBFDE2]">
       <About />
     </div>
   );

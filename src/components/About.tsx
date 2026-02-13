@@ -64,7 +64,7 @@ export default function About() {
   }, [shouldAnimate, isFirstVisit]);
 
   return (
-    <section ref={sectionRef} className="w-full bg-white font-[Helvetica_Neue,Helvetica,Arial,sans-serif]">
+    <section ref={sectionRef} className="w-full bg-black font-[Helvetica_Neue,Helvetica,Arial,sans-serif]">
       <div className="flex flex-col lg:flex-row">
         {/* Left: Portrait image */}
         <div ref={imageRef} className="w-full lg:w-[43%] lg:shrink-0 bg-black">
@@ -78,13 +78,13 @@ export default function About() {
         {/* Right: Content */}
         <div ref={contentRef} className="flex-1 px-6 py-10 lg:px-12 lg:py-16 lg:pl-16">
           {/* Header */}
-          <p className="text-[11px] tracking-[0.88px] mb-2">A BIT ABOUT ME</p>
-          <h2 className="font-light text-[48px] sm:text-[64px] lg:text-[82px] tracking-[-4px] lg:tracking-[-6.56px] leading-[1] mb-8 lg:mb-12">
+          <p className="text-[11px] tracking-[0.88px] mb-2 text-[#FBFDE2]">A BIT ABOUT ME</p>
+          <h2 className="font-light text-[48px] sm:text-[64px] lg:text-[82px] tracking-[-4px] lg:tracking-[-6.56px] leading-[1] mb-8 lg:mb-12 text-[#FBFDE2]">
             HELLO THERE
           </h2>
 
           {/* Bio paragraphs */}
-          <div className="text-[11px] tracking-[0.88px] leading-[1.6] max-w-[562px] space-y-4 mb-10 lg:mb-12">
+          <div className="text-[11px] tracking-[0.88px] leading-[1.6] max-w-[562px] space-y-4 mb-10 lg:mb-12 text-[#FBFDE2]">
             <p>
               I've been thinking about money longer than I've been writing code.
               Not about making it. About how it works. What makes a number in a
@@ -119,7 +119,7 @@ export default function About() {
           </div>
 
           {/* Two columns */}
-          <div className="flex flex-col sm:flex-row gap-10 sm:gap-16 lg:gap-24 mb-10 lg:mb-12">
+          <div className="flex flex-col sm:flex-row gap-10 sm:gap-16 lg:gap-24 mb-10 lg:mb-12 text-[#FBFDE2]">
             {/* What I think about */}
             <div className="text-[11px] tracking-[0.88px] leading-[1.6]">
               <p className="mb-4">WHAT I THINK ABOUT:</p>

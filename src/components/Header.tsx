@@ -53,20 +53,20 @@ export default function Header() {
   return (
     <header
       ref={headerRef}
-      className="relative z-50 flex w-full items-start justify-between bg-white px-[7px] py-[13px] md:px-8 md:py-4 font-[Helvetica_Neue,Helvetica,Arial,sans-serif]"
+      className="relative z-50 flex w-full items-start justify-between bg-black px-[7px] py-[13px] md:px-8 md:py-4 font-[Helvetica_Neue,Helvetica,Arial,sans-serif]"
     >
       {/* Logo / Name */}
       <div className="flex flex-col">
         {/* Mobile: Stacked name */}
-        <h1 className="md:hidden font-light text-[64px] text-black tracking-[-5px] leading-[55px]">
+        <h1 className="md:hidden font-light text-[64px] text-[#FBFDE2] tracking-[-5px] leading-[55px]">
           <span className="block">JAIDEEP</span>
           <span className="block">CHERUKURI</span>
         </h1>
         {/* Desktop: Single line */}
-        <h1 className="hidden md:block font-light text-[72px] text-black tracking-[-5.76px] leading-normal">
+        <h1 className="hidden md:block font-light text-[72px] text-[#FBFDE2] tracking-[-5.76px] leading-normal">
           JAIDEEP CHERUKURI
         </h1>
-        <p className="font-normal text-[9px] md:text-xs text-black tracking-[0.72px] md:tracking-[0.96px] leading-normal mt-4 md:mt-2">
+        <p className="font-normal text-[9px] md:text-xs text-[#FBFDE2] tracking-[0.72px] md:tracking-[0.96px] leading-normal mt-4 md:mt-2">
           PERSONAL PORTFOLIO
         </p>
       </div>

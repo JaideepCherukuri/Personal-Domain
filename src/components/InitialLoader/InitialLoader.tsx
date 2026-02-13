@@ -73,12 +73,12 @@ export function InitialLoader({ onComplete }: InitialLoaderProps) {
       {/* Top bar - slides right */}
       <div
         ref={topBarRef}
-        className="absolute top-0 left-0 w-full h-1/2 bg-black"
+        className="absolute top-0 left-0 w-full h-1/2 bg-[#FBFDE2]"
       />
       {/* Bottom bar - slides left */}
       <div
         ref={bottomBarRef}
-        className="absolute bottom-0 left-0 w-full h-1/2 bg-black"
+        className="absolute bottom-0 left-0 w-full h-1/2 bg-[#FBFDE2]"
       />
     </div>
   );
